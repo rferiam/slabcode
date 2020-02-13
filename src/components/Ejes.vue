@@ -11,8 +11,8 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import Eje from "@/components/Eje.vue";
-import { Config } from "@/interfaces";
+import Eje from "./Eje.vue";
+import { Config } from "../interfaces";
 
 @Component({
   components: {
@@ -31,7 +31,7 @@ export default class Ejes extends Vue {
   }
 
   private setEjeVertical() {
-    const height = (parseInt(this.config.n) - 1) * 100 + this.config.n * 16;
+    const height: number = (this.config.n - 1) * 100 + this.config.n * 16;
     const ev = document.querySelector(
       ".render-area .eje-vertical"
     ) as HTMLElement;

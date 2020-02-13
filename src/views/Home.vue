@@ -7,8 +7,8 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import Ejes from "@/components/Ejes.vue";
-import { Config } from "@/interfaces";
+import Ejes from "../components/Ejes.vue";
+import { Config } from "../interfaces";
 
 @Component({
   components: {

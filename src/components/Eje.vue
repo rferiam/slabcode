@@ -6,8 +6,8 @@
   </div>
 </template>
 
-<script lang="ts">
-import PuntoApoyo from "@/components/PuntoApoyo";
+<script>
+import PuntoApoyo from "./PuntoApoyo";
 
 export default {
   name: "Eje",

@@ -6,8 +6,8 @@
   </div>
 </template>
 
-<script lang="ts">
-import Llanta from "@/components/Llanta";
+<script>
+import Llanta from "./Llanta";
 
 export default {
   name: "PuntoApoyo",
