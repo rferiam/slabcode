@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
+    <meta http-equiv="refresh" content="0;URL=/slabcode">
    <script>
       (function(){
+        sessionStorage.redirect = location.href;
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
         if (redirect && redirect != location.href) {
@@ -10,7 +13,6 @@
         }
       })();
     </script>
-    <meta http-equiv="refresh" content="0;URL=/slabcode">
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
