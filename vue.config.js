@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: ‘<slabcode>’
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/slabcode/'
+    : '/'
 }
